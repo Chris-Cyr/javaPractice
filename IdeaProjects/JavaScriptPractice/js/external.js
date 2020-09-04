@@ -11,3 +11,20 @@ function addUp(num) {
 console.log(addUp(983749));
 console.log(addUp(25));
 console.log(addUp(-543));
+
+//You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
+//
+// If you can't find Nemo, return "I can't find Nemo :(".
+
+function findNemo(sentence) {
+    let newSentence = sentence.split(" ");
+    for(let i = 0; i < newSentence.length; ++i){
+        if(newSentence[i] === "Nemo") {
+            return `I found Nemo at ${i + 1}!`
+        }
+    }
+    return "I can't find Nemo :("
+}
+
+console.log(findNemo("This sentence doesn't contain the word I'm looking for"));
+console.log(findNemo("This sentence has the word Nemo in it."));
