@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="inline_js" type="HTML" />
       <mapping pattern="js-isnumber" type="JavaScript" />
+      <mapping pattern="operators" type="PLAIN_TEXT" />
       <mapping pattern="primitive_types" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
